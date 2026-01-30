@@ -1,0 +1,114 @@
+#################
+# basic config  #
+#################
+name: jspsr_r8_img_msk
+# default device: cuda
+verbose: True
+data_root: # datasets parent dir, config.py
+work_root: # project/work dir, config.py
+monitor_app: tensorboard
+
+#################
+# dataset       #
+#################
+dataset: DFC30
+train_set:
+  - Brest
+  - Caen
+  - Calais_Dunkerque
+  - Cherbourg
+  - Clermont-Ferrand
+  - LeMans
+  - Lorient
+  - Marseille_Martigues
+  - Nantes_Saint-Nazaire
+  - Nice
+  - Quimper
+  - Rennes
+  - Saint-Brieuc
+valid_set:
+  - Angers
+  - Lille_Arras_Lens_Douai_Henin
+  - Vannes
+input_data:
+  COP30: 1
+  image: 3
+  mask: 15
+  # canopy: 1
+resolution: 8
+workers: 4  # number of data loading workers
+preload: True  # preload data to memory
+
+# transforms
+relative: True  # use relative elevation
+augment: True  # data augmentation
+patch_size: 128
+tensor_kwargs:
+  log: True  # use log scale
+  min: -80  # 8m resolution
+  max: 929  # 8m resolution
+  # min: -80  # 3m resolution
+  # max: 933  # 3m resolution
+  scale_mask: True
+
+#################
+# model         #
+#################
+model_name: JSPSR
+model_kwargs:
+  num_block: 2
+  num_feature: 32
+  pretrained: False
+  checkpoint:  # path to pretrained model checkpoint for infer or finetune
+
+#################
+# optimizer     #
+#################
+loss:
+  L1: 1
+  L2: 1
+  Grad: 0.1
+optimizer: AdamW
+optimizer_kwargs:
+  weight_decay: 0.000001
+  momentum: 0.9
+  lr: 0.001
+scheduler: WarmupStepLR
+scheduler_kwargs:
+  max_lr: 0.001
+  step_size: 100
+  gamma: 0.5
+  warmup_epoch: 3
+
+#################
+# training      #
+#################
+train_batch_size: 50
+epochs: 300
+resume: False
+early_stop:
+  patience:  # epochs to wait for improvement before stopping
+  monitor: val_rmse
+
+#################
+# evaluation    #
+#################
+valid_batch_size: 1
+val_interval: 1
+val_start_epoch: 1
+metric:
+  PSNR:
+    package: piq
+  RMSE:
+    package: local
+  Median:
+    package: local
+  NMAD:
+    package: local
+  LE95:
+    package: local
+best_metric: RMSE # the metric for decide the best model, default null: all metric
+val_border: 0.05  # border to be ignored, margin = border * image_size
+val_id_visual: 438  # specify the id of images to be visualized
+val_num_visual: 2 # 0 or null for no visual, -1 for all, 1 pic, 2 pics, etc.
+val_save_visual: False  # save visualized images to disk
