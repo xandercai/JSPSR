@@ -89,7 +89,7 @@ python main.py --config configs/jspsr_r8_img.yml --val
 # 3m resolution - image and mask guidance
 python main.py --config configs/r3_128_img_msk.yml --val
 ```
-Note: Need to specify the path of pretrained checkpoint file in the config file before validation.
+Note: Specify the path to the pretrained checkpoint file in the config file before validation.
 
 
 ### Pretrained models
@@ -101,10 +101,10 @@ Note: Need to specify the path of pretrained checkpoint file in the config file 
 
 ### Acknowledgments
 
-This work was supported by the Geospatial Research Institute at the University of Canterbury. The authors would like to thank Matthew Wilson for his invaluable supervision and guidance. We also extend our sincere thanks to Maria Vega Corredor for her expert project management and support throughout this research. Finally, we are grateful to the anonymous reviewers for their insightful comments and constructive feedback, which helped to improve this manuscript.
+This work was supported by the [Geospatial Research Institute](https://geospatial.ac.nz/) at the University of Canterbury. The authors would like to thank [Matthew Wilson](https://profiles.canterbury.ac.nz/Matthew-Wilson) for his invaluable supervision and guidance. We also extend our sincere thanks to Maria Vega Corredor for her expert project management and support throughout this research. Finally, we are grateful to the anonymous reviewers for their insightful comments and constructive feedback, which helped to improve this manuscript.
 
-This repository is built upon the contributions of many open-source projects in the field of digital elevation model, super-resolution, depth completion, and multi-task learning. Thanks for all open source projects that have effectively promoted the development of further research! We are especially grateful to <a href="https://github.com/YufeiWang777/LRRU" target="_blank">LRRU</a> and <a href="https://github.com/jun0kim/dkn" target="_blank">DKN</a>, for their novel work and the excellent open source code!
-We also appreciative for <a href="https://github.com/SimonVandenhende/Multi-Task-Learning-PyTorch" target="_blank">Multi-Task Learning</a> for providing a solid foundation for training platform.
+This repository is built on contributions from many open-source projects in the fields of digital elevation models, super-resolution, depth completion, and multi-task learning. Thanks to all the open-source projects that have effectively promoted further research! We are especially grateful to <a href="https://github.com/YufeiWang777/LRRU" target="_blank">LRRU</a> and <a href="https://github.com/jun0kim/dkn" target="_blank">DKN</a>, for their novel work and the excellent open source code!
+We also appreciate <a href="https://github.com/SimonVandenhende/Multi-Task-Learning-PyTorch" target="_blank">Multi-Task Learning</a> for providing a solid foundation for the training platform.
 
 We did not list all the reference works here, but we sincerely thank all the authors for their outstanding contributions.
 
