@@ -23,7 +23,7 @@ Dockerfile is provided in the repository for easy setup.
 
 #### **DFC30**: **D**FC2022 + **F**ABDEM/FathomDEM + **C**opernicus GLO-**30**
 
-DFC30 dataset is available at [here](https://zenodo.org/records/17478574) and the data structure is:
+DFC30 dataset is available at [here](JSPSR.jpg) and the data structure is:
 
 ```
 .
