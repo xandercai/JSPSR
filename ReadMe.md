@@ -2,7 +2,7 @@
 
 [Paper](https://www.mdpi.com/2072-4292/17/21/3591#)
 
-![image](https://www.mdpi.com/remotesensing/remotesensing-17-03591/article_deploy/html/images/remotesensing-17-03591-g005.png)
+![image](JSPSR.jpg)
 
 ### Environment
 ```
@@ -17,7 +17,7 @@ Within Docker:
     Torchvision 0.16
     OpenCV 4.7.0
 ```
-Dockerfile is provided in the repository for easy setup.
+The Dockerfile is provided in the repository for easy setup.
 
 ### Dataset
 
