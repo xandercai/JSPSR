@@ -97,7 +97,7 @@ Note: Specify the path to the pretrained checkpoint file in the config file befo
 #### Weight trained on DFC30 dataset.
 | Methods | Pretrained Weight                                                                                     |   Task    | Guidance | RMSE[m] | PSRN[dB] |
 |:-------:|-------------------------------------------------------------------------------------------------------|:---------:|:--------:|:--------:|:--------:|
-|  JSPSR  | [download link](https://drive.google.com/drive/folders/1eL41Dd6A8iGmKrf_Igw9-Xr0iG8GcWiE?usp=sharing) | 30m to 3m | Image |  1.1094  | 58.4587  |
+|  JSPSR  | [download link](https://drive.google.com/drive/folders/1eL41Dd6A8iGmKrf_Igw9-Xr0iG8GcWiE?usp=sharing) | 30m to 8m | Image |  1.1094  | 58.4587  |
 
 ### Acknowledgments
 
