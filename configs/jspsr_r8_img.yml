@@ -1,7 +1,7 @@
 #################
 # basic config  #
 #################
-name: r8_128_img
+name: jspsr_r8_img
 # default device: cuda
 verbose: True
 data_root: # datasets parent dir, config.py
