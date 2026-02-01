@@ -43,7 +43,6 @@ preload: True  # preload data to memory
 relative: True  # use relative elevation
 augment: True  # data augmentation
 patch_size: 128
-patches_per_image:
 tensor_kwargs:
   log: True  # use log scale
   # min: -80  # 8m resolution
