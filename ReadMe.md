@@ -39,7 +39,7 @@ DFC30 dataset is available at [here](https://zenodo.org/records/18426236) and th
 │    ├── ...
 │    └── City_16
 │         ├── ...
-│         └── FathomDEM
+│         └── FATHOM
 ├── DFC30_3m
 │    ├── City_1
 │    │    ├── BDORTHO       (RGB images, resolution: 3m)
