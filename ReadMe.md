@@ -65,7 +65,7 @@ DFC30 dataset is available at [here](https://zenodo.org/records/18426236) and th
      ├── ...
      └── City_16
           ├── ...
-          └── FABDEM
+          └── FATHOM
 ```
 
 ### Usage
@@ -95,9 +95,10 @@ Note: Specify the path to the pretrained checkpoint file in the config file befo
 ### Pretrained models
 
 #### Weight trained on DFC30 dataset.
-| Methods | Pretrained Weight                                                                                     |   Task    | Guidance | RMSE[m] | PSRN[dB] |
-|:-------:|-------------------------------------------------------------------------------------------------------|:---------:|:--------:|:--------:|:--------:|
-|  JSPSR  | [download link](https://drive.google.com/drive/folders/1eL41Dd6A8iGmKrf_Igw9-Xr0iG8GcWiE?usp=sharing) | 30m to 8m | Image |  1.1094  | 58.4587  |
+|   Methods    | Pretrained Weight                                                                                     |   Task    |  Guidance  | RMSE[m] | PSRN[dB] |
+|:------------:|-------------------------------------------------------------------------------------------------------|:---------:|:----------:|:-------:|:--------:|
+| JSPSR$_{2b}$ | [download link](https://drive.google.com/file/d/1kAGgjfoHcJ0EzrA5G810GSoJ-Xe-ROi3/view?usp=sharing) | 30m to 8m |   Image    | 1.1094  | 58.4587  |
+| JSPSR$_{3b}$ | [download link](https://drive.google.com/file/d/17JdRqSP6mwAg5iQzwB2vs5KY6g3toSgB/view?usp=sharing) | 30m to 8m | Image+Mask | 1.0741  | 58.7396  |
 
 ### Acknowledgments
 
