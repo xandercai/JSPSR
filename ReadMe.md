@@ -87,7 +87,7 @@ python main.py --config configs/jspsr_r3_img_msk.yml
 # 8m resolution - image guidance
 python main.py --config configs/jspsr_r8_img.yml --val
 # 3m resolution - image and mask guidance
-python main.py --config configs/r3_128_img_msk.yml --val
+python main.py --config configs/jspsr_r3_img_msk.yml --val
 ```
 Note: Specify the path to the pretrained checkpoint file in the config file before validation.
 
