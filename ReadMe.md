@@ -95,10 +95,12 @@ Note: Specify the path to the pretrained checkpoint file in the config file befo
 ### Pretrained models
 
 #### Weight trained on DFC30 dataset.
-|      Methods       | Pretrained Weight                                                                                     |   Task    |  Guidance  | RMSE[m] | PSRN[dB] |
-|:------------------:|-------------------------------------------------------------------------------------------------------|:---------:|:----------:|:-------:|:--------:|
-| JSPSR<sub>2b</sub> | [download link](https://drive.google.com/file/d/1kAGgjfoHcJ0EzrA5G810GSoJ-Xe-ROi3/view?usp=sharing) | 30m to 8m |   Image    | 1.1094  | 58.4587  |
+|      Methods       | Pretrained Weight   |   Task    |  Guidance  | RMSE[m] | PSRN[dB] |
+|:------------------:|---------------------|:---------:|:----------:|:-------:|:--------:|
+| JSPSR<sub>2b</sub> | [download link](https://drive.google.com/file/d/1zjz-iz4hs5A0LI-BzXdfSC0NUryl3JIi/view?usp=sharing) | 30m to 8m |   Image    | 1.1087  | 58.4640  |
 | JSPSR<sub>3b</sub> | [download link](https://drive.google.com/file/d/17JdRqSP6mwAg5iQzwB2vs5KY6g3toSgB/view?usp=sharing) | 30m to 8m | Image+Mask | 1.0741  | 58.7396  |
+| JSPSR<sub>2b</sub> | [download link](https://drive.google.com/file/d/1vDUA6iQYkVGasI5zYsAmCWOZd-SYqh3_/view?usp=sharing) | 30m to 3m |   Image    | 1.1197  | 58.4157  |
+| JSPSR<sub>3b</sub> | [download link](https://drive.google.com/file/d/1idGvgDARTF_mTjTWMj78jGcnk3DrcuEy/view?usp=sharing) | 30m to 3m | Image+Mask | 1.1150  | 58.4524  |
 
 ### Acknowledgments
 
